@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game_dash">
+        <div class="dashbord">
+            <div class="count">
+                <div class="guess" data-guessCount></div>
+                <div class="clues" data-clue></div>
+                <div class="level" data-level></div>
+                <div class="score" data-score></div>
+            </div>
+            <div class="display">
+                <div class="in">
+                    <div class="input_display" data-guess></div>
+                </div>
+                <div class="out">
+                    <div class="validation_msg" data-message></div>
+                </div>
+            </div>
+        </div>
+        <div class="input_data">
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-delete class="active">Del</button>
+            <button data-number>0</button>
+            <button data-submit class="active">Submit</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;1,400&display=swap');
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(77, 60, 59), rgb(46, 12, 19));
+}
+
+.game_dash {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(1, 600px);
+    grid-template-rows: repeat(2, 280px);
+}
+
+.dashbord {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.count {
+    color: beige;
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.display {
+    font-weight: 900;
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 25vh;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 2.5rem;
+}
+
+.input_display {
+    font-family: 'Nunito', sans-serif;;
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.validation_msg {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.input_data {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(5, 90px);
+}
+
+button {
+    cursor: pointer;
+    font-size: 1.9rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+button.active {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#span-3 {
+    grid-column: span 3;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px ) {
+    .game_dash {
+        grid-template-columns: repeat(1, 375px);
+        grid-template-rows: repeat(2, 200px);
+    }
+    .count {
+        font-size: 1.0rem;
+    }
+    .display {
+        font-size: 2.0rem;
+    }
+    .input_display {
+        font-size: 1.9rem;
+    }
+    .input_data {
+        grid-template-columns: repeat(3, 125px);
+        grid-template-rows: repeat(5, 100px);
+    }
+    button {
+        font-size: 1.99rem;
+        border: 0.75px solid white;
+        border-radius: 3px;
+    }
+    button.active {
+        font-size: 2.3rem;
+    }
+    #span-3 {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width:390px ) {
+    .game_dash {
+        grid-template-columns: repeat(1, 276px);
+        grid-template-rows: repeat(2, 198px);
+    }
+    .count {
+        font-size: 0.8rem;
+    }
+    .display {
+        font-size: 1.5rem;
+    }
+    .input_display {
+        font-size: 1.5rem;
+    }
+    .input_data {
+        grid-template-columns: repeat(3, 92px);
+        grid-template-rows: repeat(5, 80px);
+    }
+    button {
+        font-size: 1.75rem;
+        border: 0.65px solid white;
+        border-radius: 2px;
+    }
+    button.active {
+        font-size: 1.78rem;
+    }
+    #span-3 {
+        font-size: 2.1rem;
+    }
+}
